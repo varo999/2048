@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/electric_blue"
+    android:background="@drawable/background_gradient"
     android:gravity="center">
 
     <!-- Título más arriba -->
@@ -15,7 +15,8 @@
         android:text="2048"
         android:textSize="50sp"
         android:textColor="@android:color/white"
-        android:layout_gravity="center_horizontal" />
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="cursive"/>
 
     <!-- RelativeLayout para alinear los elementos en la misma fila -->
     <RelativeLayout
@@ -43,7 +44,8 @@
             android:layout_centerHorizontal="true"
             android:text="0 Puntos"
             android:textSize="20sp"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:fontFamily="cursive"/>
 
         <!-- Movimientos alineado a la derecha del texto de puntos -->
         <TextView
@@ -55,7 +57,8 @@
             android:layout_alignTop="@id/textView1"
             android:text="0 Movimientos"
             android:textSize="20sp"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white"
+            android:fontFamily="cursive"/>
 
     </RelativeLayout>
 

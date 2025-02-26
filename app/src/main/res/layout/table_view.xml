@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/electric_blue"
+    android:background="@drawable/background_gradient"
     android:padding="16dp">
 
     <!-- Título o encabezado -->
@@ -11,10 +11,11 @@
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Puntuaciones del Juego"
+        android:text="Mejores 10 Puntuaciones"
         android:textSize="18sp"
         android:paddingBottom="8dp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"/>
 
     <!-- TableLayout donde se agregarán las filas con las puntuaciones -->
     <TableLayout

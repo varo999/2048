@@ -73,10 +73,11 @@ public class FuncionesCandyCrush {
         String targetColor = selectedCandy.getColor(); // Obtenemos el color del caramelo seleccionado
 
         // Verificamos en las 4 direcciones: arriba, abajo, izquierda, derecha
-        if (contarEnDireccion(board, targetColor, row1, col1, -1, 0) >= 2 ||  // Arriba
-                contarEnDireccion(board, targetColor, row1, col1, 1, 0) >= 2 ||   // Abajo
-                contarEnDireccion(board, targetColor, row1, col1, 0, -1) >= 2 ||  // Izquierda
-                contarEnDireccion(board, targetColor, row1, col1, 0, 1) >= 2) {   // Derecha
+        if ((contarEnDireccion(board, targetColor, row1, col1, -1, 0) +
+                contarEnDireccion(board, targetColor, row1, col1, 1, 0) - 1) >= 3 ||  // Verifica arriba y abajo juntos
+                (contarEnDireccion(board, targetColor, row1, col1, 0, -1) +
+                        contarEnDireccion(board, targetColor, row1, col1, 0, 1) - 1) >= 3) {  // Verifica izquierda y derecha juntos
+
             return true; // Si encontramos 3 o más caramelos en alguna dirección, se puede combinar
         }
 

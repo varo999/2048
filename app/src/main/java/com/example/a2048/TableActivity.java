@@ -62,12 +62,10 @@ public class TableActivity extends AppCompatActivity {
             row.setPadding(0, 1, 0, 1); // Añadir un pequeño espacio entre las filas
 
             String usuarioNombre = String.valueOf(puntuacion.get("usuario_nombre")); // Obtener el nombre del usuario
-            String juegoNombre = (String) puntuacion.get("juego_nombre"); // Obtener el nombre del juego
+            int juegoID = (int) puntuacion.get("juego_id"); // Obtener el ID del juego como entero
 
-            // Si el nombre del juego es null o vacío, asignar "CandyCrush" o "2048"
-            if (juegoNombre == null || juegoNombre.trim().isEmpty()) {
-                juegoNombre = "CandyCrush";  // O puedes asignar "2048" si lo prefieres
-            }
+            // Asignar el nombre del juego basado en si el ID es par o impar
+            String juegoNombre = (juegoID % 2 == 0) ? "CandyCrush" : "2048";  // Si ID es par, asigna CandyCrush, si es impar, asigna 2048
 
             String puntos = String.valueOf(puntuacion.get("puntos"));
 
@@ -100,3 +98,4 @@ public class TableActivity extends AppCompatActivity {
         row.addView(textView);
     }
 }
+

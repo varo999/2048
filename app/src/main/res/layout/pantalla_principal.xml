@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp"
     android:gravity="center"
-    android:background="@color/electric_blue">
+    android:background="@drawable/background_gradient">
 
     <!-- RelativeLayout para manejar la posición del botón -->
     <RelativeLayout
@@ -25,7 +25,9 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:onClick="toggleOptions"/>
+            android:onClick="toggleOptions"
+            android:fontFamily="cursive"
+            android:textSize="24sp"/>
     </RelativeLayout>
 
     <!-- LinearLayout que contiene los botones desplegables -->
@@ -35,7 +37,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="8dp"
-        android:background="@color/electric_blue"
+        android:background="#00000000"
         android:gravity="end"
         android:visibility="gone">
 
@@ -48,7 +50,8 @@
             android:textColor="@color/white"
             android:backgroundTint="@color/electric_blue"
             android:onClick="onRegistroClick"
-            android:drawableLeft="@drawable/registrarse"/>
+            android:drawableLeft="@drawable/registrarse"
+            android:fontFamily="cursive"/>
 
 
         <!-- Botón de Iniciar Sesión -->
@@ -61,7 +64,8 @@
             android:backgroundTint="@color/electric_blue"
             android:layout_marginStart="16dp"
             android:onClick="onIniciarSesionClick"
-            android:drawableLeft="@drawable/registrarse"/>
+            android:drawableLeft="@drawable/registrarse"
+            android:fontFamily="cursive"/>
 
         <!-- Botón de Mejores Puntuaciones -->
         <Button
@@ -73,7 +77,8 @@
             android:backgroundTint="@color/electric_blue"
             android:layout_marginStart="16dp"
             android:onClick="onMejoresPuntuacionesClick"
-            android:drawableLeft="@drawable/mejores_puntuaciones"/>
+            android:drawableLeft="@drawable/mejores_puntuaciones"
+            android:fontFamily="cursive"/>
 
 
     </LinearLayout>
@@ -89,7 +94,8 @@
         android:textStyle="bold"
         android:textColor="@android:color/white"
         android:layout_gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:fontFamily="cursive"/>
 
 
 

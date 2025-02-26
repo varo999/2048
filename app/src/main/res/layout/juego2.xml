@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/electric_blue">
+    android:background="@drawable/background_gradient">
 
     <TextView
         android:id="@+id/titulo"
@@ -12,7 +12,8 @@
         android:textSize="50sp"
         android:gravity="center"
         android:textColor="@android:color/white"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/textView1"
@@ -24,7 +25,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginBottom="60dp"
         android:layout_centerHorizontal="true"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"/>
 
     <TextView
         android:id="@+id/textView2"
@@ -37,7 +39,8 @@
         android:layout_marginStart="25dp"
         android:layout_alignTop="@id/textView1"
         android:layout_marginBottom="60dp"
-        android:textColor="@android:color/white"/>
+        android:textColor="@android:color/white"
+        android:fontFamily="cursive"/>
 
     <GridLayout
         android:id="@+id/gameBoard"
