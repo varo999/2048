@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:background="@color/electric_blue">
+
+    <!-- RelativeLayout para manejar la posición del botón -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Botón para desplegar los demás botones -->
+        <Button
+            android:id="@+id/btn_desplegar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opciones"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/electric_blue"
+            android:drawableLeft="@drawable/icono_pantalla_principal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:onClick="toggleOptions"/>
+    </RelativeLayout>
+
+    <!-- LinearLayout que contiene los botones desplegables -->
+    <LinearLayout
+        android:id="@+id/ll_botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@color/electric_blue"
+        android:gravity="end"
+        android:visibility="gone">
+
+        <!-- Botón de Registrarse -->
+        <Button
+            android:id="@+id/btn_registro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrarse"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/electric_blue"
+            android:onClick="onRegistroClick"
+            android:drawableLeft="@drawable/registrarse"/>
+
+
+        <!-- Botón de Iniciar Sesión -->
+        <Button
+            android:id="@+id/btn_iniciar_sesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Iniciar Sesión"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/electric_blue"
+            android:layout_marginStart="16dp"
+            android:onClick="onIniciarSesionClick"
+            android:drawableLeft="@drawable/registrarse"/>
+
+        <!-- Botón de Mejores Puntuaciones -->
+        <Button
+            android:id="@+id/btn_mejores_puntuaciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Records"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/electric_blue"
+            android:layout_marginStart="16dp"
+            android:onClick="onMejoresPuntuacionesClick"
+            android:drawableLeft="@drawable/mejores_puntuaciones"/>
+
+
+    </LinearLayout>
+
+
+    <!-- Título en la parte superior -->
+    <TextView
+        android:id="@+id/titulo_juegos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juegos"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+
+
+    <!-- HorizontalScrollView para deslizar las imágenes -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"> <!-- Esto asegura que el contenido se alinee en el centro del ScrollView -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <!-- Imágenes dentro del LinearLayout -->
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="250dp"
+                android:layout_height="450dp"
+                android:src="@drawable/imagen_2048"
+                android:layout_marginEnd="16dp"
+                style="@style/MobileScreenStyle"
+                android:contentDescription="Imagen 1"
+                android:clickable="true"
+                android:focusable="true"/>
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="250dp"
+                android:layout_height="450dp"
+                android:src="@drawable/candy_crush"
+                style="@style/MobileScreenStyle"
+                android:contentDescription="Imagen 2"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
+
+

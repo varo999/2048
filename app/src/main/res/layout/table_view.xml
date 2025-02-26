@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/electric_blue"
+    android:padding="16dp">
+
+    <!-- Título o encabezado -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puntuaciones del Juego"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"
+        android:textColor="@android:color/white"/>
+
+    <!-- TableLayout donde se agregarán las filas con las puntuaciones -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0">
+    </TableLayout>
+
+</LinearLayout>

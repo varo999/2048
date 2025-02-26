@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CircularImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item> <!-- Esto hace que sea redonda -->
+    </style>
+    <!-- Estilo para las imágenes dentro del móvil -->
+    <style name="MobileScreenStyle">
+
+        <item name="android:background">@drawable/screen_background</item>
+
+
+        <item name="android:layout_margin">16dp</item>
+
+
+        <item name="android:elevation">4dp</item>
+
+
+        <item name="android:translationZ">8dp</item>
+    </style>
+    <style name="CellStyle">
+        <!-- Fondo con bordes redondeados -->
+        <item name="android:background">@drawable/cell_shape</item>
+
+        <!-- Tamaño del texto -->
+        <item name="android:textSize">18sp</item>
+
+        <!-- Texto centrado -->
+        <item name="android:gravity">center</item>
+
+        <!-- Márgenes entre las celdas -->
+        <item name="android:layout_margin">3dp</item>
+
+        <!-- Color del texto (si es necesario) -->
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

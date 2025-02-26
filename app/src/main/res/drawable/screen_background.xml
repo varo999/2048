@@ -1,0 +1,20 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo de la pantalla, puede ser negro o gris -->
+    <solid android:color="#000000"/> <!-- Fondo de la pantalla móvil, negro -->
+
+    <!-- Bordes redondeados -->
+    <corners android:radius="24dp"/> <!-- Mayor radio para esquinas más redondeadas -->
+
+    <!-- Establecer un borde dentro -->
+    <stroke
+        android:color="#FFFFFF"
+        android:width="4dp"/> <!-- Grosor del borde -->
+
+    <!-- Espaciado interno -->
+    <padding
+        android:left="16dp"
+        android:right="16dp"
+        android:top="32dp"
+        android:bottom="32dp"
+    />
+</shape>
